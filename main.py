@@ -27,7 +27,7 @@ if __name__ == "__main__":
             your_ans = input("Input your answer: (r to replay)")
             
             while your_ans == "r":
-                playsound("./Sounds/" + str(num) + ".mp3")
+                playsound("./Sounds_0to1000/" + str(num) + ".mp3")
                 your_ans = input("Input your answer: (r to replay)")
                 
             if int(your_ans) == num:
@@ -37,6 +37,6 @@ if __name__ == "__main__":
             elif int(your_ans) is not num:
                 print(f"Wrong, Correct Ans:{num}")
                 while int(your_ans) != num:
-                    playsound("./Sounds/" + str(num) + ".mp3")
+                    playsound("./Sounds_0to1000/" + str(num) + ".mp3")
                     your_ans = input("Input your answer: ")
                 sleep(1)
